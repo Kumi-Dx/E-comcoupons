@@ -118,6 +118,28 @@ function HomePage() {
     setSearchResults([]);
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString()
+      });
+      
+      if (response.ok) {
+        setFormSubmitted(true);
+        setName("");
+        setEmail("");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Header */}
@@ -363,9 +385,9 @@ function HomePage() {
               <form 
                 name="newsletter"
                 method="POST"
-                action="/thank-you"
+                onSubmit={handleSubmit}
                 data-netlify="true"
-                netlify-honeypot="bot-field"
+                data-netlify-honeypot="bot-field"
                 className="flex flex-col gap-4 max-w-lg mx-auto"
               >
                 <input type="hidden" name="form-name" value="newsletter" />

@@ -22,6 +22,7 @@ function HomePage() {
   const [isSearching, setIsSearching] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
 
   // Hero section sliding text messages
   const heroTextMessages = [
@@ -115,13 +116,6 @@ function HomePage() {
     setSearchTerm('');
     setIsSearching(false);
     setSearchResults([]);
-  };
-
-  // Handle newsletter form submission
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-    setEmail('');
   };
 
   return (
@@ -354,7 +348,7 @@ function HomePage() {
         </section>
       )}
 
-      {/* Newsletter - Hide when searching */}
+      {/* Newsletter Section */}
       {!isSearching && (
         <section className="bg-gray-800 py-12 border-t border-gray-700">
           <div className="container mx-auto px-4 max-w-4xl text-center">
@@ -371,8 +365,13 @@ function HomePage() {
                 method="POST"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                onSubmit={handleNewsletterSubmit}
-                className="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setFormSubmitted(true);
+                  setEmail('');
+                  setName('');
+                }}
+                className="flex flex-col gap-4 max-w-lg mx-auto"
               >
                 <input type="hidden" name="form-name" value="newsletter" />
                 <p className="hidden">
@@ -381,13 +380,22 @@ function HomePage() {
                   </label>
                 </p>
                 <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="px-4 py-2 rounded-md border border-gray-600 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+                <input
                   type="email"
                   name="email"
                   placeholder="Your email address"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-grow px-4 py-2 rounded-md border border-gray-600 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="px-4 py-2 rounded-md border border-gray-600 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
                 <button 
                   type="submit"

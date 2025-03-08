@@ -20,6 +20,8 @@ function HomePage() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [searchResults, setSearchResults] = useState<typeof coupons>([]);
   const [isSearching, setIsSearching] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [email, setEmail] = useState('');
 
   // Hero section sliding text messages
   const heroTextMessages = [
@@ -113,6 +115,13 @@ function HomePage() {
     setSearchTerm('');
     setIsSearching(false);
     setSearchResults([]);
+  };
+
+  // Handle newsletter form submission
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormSubmitted(true);
+    setEmail('');
   };
 
   return (
@@ -351,16 +360,43 @@ function HomePage() {
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h3 className="text-2xl font-bold text-gray-100 mb-4">Never Miss a Deal</h3>
             <p className="text-gray-400 mb-6">Subscribe to our newsletter and get the latest e-commerce coupons delivered to your inbox.</p>
-            <div className="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-grow px-4 py-2 rounded-md border border-gray-600 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-              <button className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors duration-200">
-                Subscribe
-              </button>
-            </div>
+            
+            {formSubmitted ? (
+              <div className="bg-green-900 text-green-100 p-4 rounded-md max-w-lg mx-auto">
+                <p>Thank you for subscribing! You'll receive our next newsletter soon.</p>
+              </div>
+            ) : (
+              <form 
+                name="newsletter"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleNewsletterSubmit}
+                className="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto"
+              >
+                <input type="hidden" name="form-name" value="newsletter" />
+                <p className="hidden">
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </p>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-grow px-4 py-2 rounded-md border border-gray-600 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+                <button 
+                  type="submit"
+                  className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors duration-200"
+                >
+                  Subscribe
+                </button>
+              </form>
+            )}
           </div>
         </section>
       )}

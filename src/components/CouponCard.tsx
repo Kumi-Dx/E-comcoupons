@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Copy, ExternalLink, Clock } from 'lucide-react';
+import { Copy, ExternalLink, Clock, BookOpen } from 'lucide-react';
 import { Coupon } from '../types';
+import { Link } from 'react-router-dom';
 
 interface CouponCardProps {
   coupon: Coupon;
@@ -25,6 +26,15 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
   const getFallbackImage = () => {
     return `https://ui-avatars.com/api/?name=${encodeURIComponent(coupon.store)}&background=6366f1&color=fff&size=128`;
   };
+
+  // Check if this is a Helium 10 coupon
+  const isHelium10 = coupon.store === 'Helium 10';
+  
+  // Check if this is a Make coupon
+  const isMake = coupon.store === 'Make.com';
+  
+  // Check if this is a Shopify coupon
+  const isShopify = coupon.store === 'Shopify';
 
   return (
     <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 border border-gray-700">
@@ -62,28 +72,74 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
           <span>Expires: {new Date(coupon.expiryDate).toLocaleDateString()}</span>
         </div>
         
-        {/* Coupon Code */}
-        <div className="flex items-center mb-4">
-          <div className="flex-1 bg-gray-700 border border-dashed border-gray-600 rounded-l-md p-2 text-center font-mono text-sm text-gray-300">
-            {coupon.code}
+        {/* Coupon Code - Only show if there is a code */}
+        {coupon.code && (
+          <div className="flex items-center mb-4">
+            <div className="flex-1 bg-gray-700 border border-dashed border-gray-600 rounded-l-md p-2 text-center font-mono text-sm text-gray-300">
+              {coupon.code}
+            </div>
+            <button 
+              onClick={handleCopyCode}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-r-md transition-colors duration-200"
+            >
+              {copied ? 'Copied!' : <Copy size={18} />}
+            </button>
           </div>
-          <button 
-            onClick={handleCopyCode}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-r-md transition-colors duration-200"
-          >
-            {copied ? 'Copied!' : <Copy size={18} />}
-          </button>
-        </div>
+        )}
         
-        {/* Action Button */}
-        <a 
-          href={coupon.link} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
-        >
-          Shop Now <ExternalLink size={14} className="ml-1" />
-        </a>
+        {/* Action Buttons */}
+        <div className="space-y-2">
+          {/* Shop Now Button */}
+          {isMake ? (
+            <a 
+              href="https://www.make.com/en/register?pc=prosper" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Shop Now <ExternalLink size={14} className="ml-1" />
+            </a>
+          ) : (
+            <a 
+              href={coupon.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Shop Now <ExternalLink size={14} className="ml-1" />
+            </a>
+          )}
+          
+          {/* Blog Link for Helium 10 */}
+          {isHelium10 && (
+            <Link 
+              to="/blog/helium10-amazon-seller-tool" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+          
+          {/* Blog Link for Make */}
+          {isMake && (
+            <Link 
+              to="/blog/make-automation-platform" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+          
+          {/* Blog Link for Shopify */}
+          {isShopify && (
+            <Link 
+              to="/blog/shopify-ecommerce-platform" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tag, Globe, ShoppingCart, Mail, Zap, ClipboardList } from 'lucide-react';
+import { Tag, Globe, ShoppingCart, Mail, Zap, ClipboardList, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -43,6 +43,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors duration-200">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors duration-200">About Us</Link></li>
+              <li><Link to="/blog" className="text-gray-400 hover:text-white transition-colors duration-200">Blog</Link></li>
               <li><Link to="/affiliate-disclosure" className="text-gray-400 hover:text-white transition-colors duration-200">Affiliate Disclosure</Link></li>
               <li><Link to="/popular-deals" className="text-gray-400 hover:text-white transition-colors duration-200">Popular Deals</Link></li>
               <li><Link to="/new-coupons" className="text-gray-400 hover:text-white transition-colors duration-200">New Coupons</Link></li>

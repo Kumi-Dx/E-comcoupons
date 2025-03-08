@@ -11,6 +11,10 @@ import HomePage from './pages/HomePage';
 import PopularDealsPage from './pages/PopularDealsPage';
 import NewCouponsPage from './pages/NewCouponsPage';
 import FAQPage from './pages/FAQPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostHelium10 from './pages/BlogPostHelium10';
+import BlogPostMake from './pages/BlogPostMake';
+import BlogPostShopify from './pages/BlogPostShopify';
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
         <Route path="/popular-deals" element={<PopularDealsPage />} />
         <Route path="/new-coupons" element={<NewCouponsPage />} />
         <Route path="/faq" element={<FAQPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/helium10-amazon-seller-tool" element={<BlogPostHelium10 />} />
+        <Route path="/blog/make-automation-platform" element={<BlogPostMake />} />
+        <Route path="/blog/shopify-ecommerce-platform" element={<BlogPostShopify />} />
       </Routes>
     </Router>
   );

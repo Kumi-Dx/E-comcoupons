@@ -357,20 +357,15 @@ function HomePage() {
             
             {formSubmitted ? (
               <div className="bg-green-900 text-green-100 p-4 rounded-md max-w-lg mx-auto">
-                <p>Thank you for subscribing! You'll receive our next newsletter soon.</p>
+                <p>Thank you for subscribing!</p>
               </div>
             ) : (
               <form 
                 name="newsletter"
                 method="POST"
+                action="/thank-you"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setFormSubmitted(true);
-                  setEmail('');
-                  setName('');
-                }}
                 className="flex flex-col gap-4 max-w-lg mx-auto"
               >
                 <input type="hidden" name="form-name" value="newsletter" />

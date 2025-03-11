@@ -34,6 +34,36 @@ const BlogPage = () => {
       category: 'E-commerce Platforms',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
       featured: false
+    },
+    {
+      id: 'moosend-email-marketing',
+      title: 'Moosend: The Smart Choice for E-commerce Email Marketing in 2025',
+      excerpt: 'Discover how Moosend helps e-commerce businesses boost sales with powerful email automation, personalization, and analytics features at competitive prices.',
+      date: 'March 4, 2025',
+      author: 'Alex D.',
+      category: 'Email Marketing',
+      image: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: false
+    },
+    {
+      id: 'jotform-online-forms',
+      title: 'Jotform: The Ultimate Form Builder for E-commerce Businesses in 2025',
+      excerpt: 'Learn how Jotform can help you create powerful forms and surveys to collect customer data, process orders, and streamline your business operations.',
+      date: 'March 9, 2025',
+      author: 'Brad V.',
+      category: 'Form Building',
+      image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: false
+    },
+    {
+      id: 'apollo-sales-intelligence',
+      title: 'Apollo.io: Revolutionizing B2B Sales and Marketing in 2025',
+      excerpt: 'Explore how Apollo.io combines comprehensive B2B data, powerful sales intelligence, and automated engagement tools to accelerate business growth.',
+      date: 'March 9, 2025',
+      author: 'Alex D.',
+      category: 'Sales Intelligence',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: false
     }
   ];
 

@@ -13,6 +13,17 @@ export const coupons: Coupon[] = [
     category: 'website',
     link: 'https://shopify.pxf.io/c/6094593/1499965/13624'
   },
+  {
+    id: 'web3',
+    store: 'Jotform',
+    storeImage: '/jotform-logo.png',
+    code: '',
+    discount: '50% OFF FIRST YEAR',
+    description: 'Get 50% off any paid plan for the first year',
+    expiryDate: '2025-12-31',
+    category: 'website',
+    link: 'https://link.jotform.com/e-comcoupons-Q9C9swMGio'
+  },
 
   // Online Marketplaces Category
   {
@@ -38,6 +49,19 @@ export const coupons: Coupon[] = [
     link: 'https://bit.ly/47tMwU1'
   },
 
+  // Email Marketing Category
+  {
+    id: 'email1',
+    store: 'Moosend',
+    storeImage: 'https://logo.clearbit.com/moosend.com',
+    code: 'AFF30',
+    discount: '30% OFF FIRST MONTH',
+    description: 'Get 30% off your first month on any plan',
+    expiryDate: '2025-12-31',
+    category: 'email',
+    link: 'https://trymoo.moosend.com/ox4ds4y0y6fv'
+  },
+
   // Automation Category
   {
     id: 'auto3',
@@ -49,5 +73,29 @@ export const coupons: Coupon[] = [
     expiryDate: '2025-10-31',
     category: 'automation',
     link: 'https://www.make.com/en/register?pc=prosper'
+  },
+
+  // Apollo.io (both Email Marketing and Automation categories)
+  {
+    id: 'apollo1',
+    store: 'Apollo.io',
+    storeImage: 'https://logo.clearbit.com/apollo.io',
+    code: '',
+    discount: 'FREE TRIAL + SPECIAL PRICING',
+    description: 'Get started with Apollo.io and receive special partner pricing',
+    expiryDate: '2025-12-31',
+    category: 'email',
+    link: 'https://get.apollo.io/grbvftwtz4oo'
+  },
+  {
+    id: 'apollo2',
+    store: 'Apollo.io',
+    storeImage: 'https://logo.clearbit.com/apollo.io',
+    code: '',
+    discount: 'FREE TRIAL + SPECIAL PRICING',
+    description: 'Get started with Apollo.io and receive special partner pricing',
+    expiryDate: '2025-12-31',
+    category: 'automation',
+    link: 'https://get.apollo.io/grbvftwtz4oo'
   }
 ];

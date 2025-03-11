@@ -65,6 +65,13 @@ const BlogPostMake = () => {
                 </p>
                 
                 <h2>What is Make.com?</h2>
+
+<img 
+                  src="https://hlhlfaidhsttgfyojoyw.supabase.co/storage/v1/object/sign/Affiliate%20Images/Best%20featuresat%20Make%20-%20Light.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJBZmZpbGlhdGUgSW1hZ2VzL0Jlc3QgZmVhdHVyZXNhdCBNYWtlIC0gTGlnaHQucG5nIiwiaWF0IjoxNzQxNjU4NTA3LCJleHAiOjE3NzMxOTQ1MDd9.Ch-cS-o_DwlILZZnUtZ5fo4t6Lav43bzcI9E8qGCzAs"
+                  alt="Make Best Features"
+                  className="w-full rounded-lg shadow-lg mb-6"
+                />
+                
                 <p>
                   Make.com is a powerful visual automation platform that allows you to connect apps and automate workflows without writing a single line of code. It serves as the glue between your various business applications, enabling them to work together seamlessly. Whether you're managing an e-commerce store, running marketing campaigns, or handling customer support, Make.com can help you automate repetitive tasks and create sophisticated workflows that save time and reduce errors.
                 </p>

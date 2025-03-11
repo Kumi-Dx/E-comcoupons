@@ -36,6 +36,15 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
   // Check if this is a Shopify coupon
   const isShopify = coupon.store === 'Shopify';
 
+  // Check if this is a Moosend coupon
+  const isMoosend = coupon.store === 'Moosend';
+
+  // Check if this is a Jotform coupon
+  const isJotform = coupon.store === 'Jotform';
+
+  // Check if this is an Apollo coupon
+  const isApollo = coupon.store === 'Apollo.io';
+
   return (
     <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 border border-gray-700">
       {/* Store Logo and Discount Badge */}
@@ -134,6 +143,36 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
           {isShopify && (
             <Link 
               to="/blog/shopify-ecommerce-platform" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {/* Blog Link for Moosend */}
+          {isMoosend && (
+            <Link 
+              to="/blog/moosend-email-marketing" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {/* Blog Link for Jotform */}
+          {isJotform && (
+            <Link 
+              to="/blog/jotform-online-forms" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {/* Blog Link for Apollo */}
+          {isApollo && (
+            <Link 
+              to="/blog/apollo-sales-intelligence" 
               className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
               Read Our Review <BookOpen size={14} className="ml-1" />

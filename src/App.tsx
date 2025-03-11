@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import { Search, Tag, Globe, ShoppingCart, Mail, Zap, ClipboardList, ChevronRight, ChevronLeft } from 'lucide-react';
-import CouponCard from './components/CouponCard';
-import { coupons } from './data/coupons';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import AffiliateDisclosurePage from './pages/AffiliateDisclosurePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -15,6 +12,9 @@ import BlogPage from './pages/BlogPage';
 import BlogPostHelium10 from './pages/BlogPostHelium10';
 import BlogPostMake from './pages/BlogPostMake';
 import BlogPostShopify from './pages/BlogPostShopify';
+import BlogPostMoosend from './pages/BlogPostMoosend';
+import BlogPostJotform from './pages/BlogPostJotform';
+import BlogPostApollo from './pages/BlogPostApollo';
 
 function App() {
   return (
@@ -32,6 +32,9 @@ function App() {
         <Route path="/blog/helium10-amazon-seller-tool" element={<BlogPostHelium10 />} />
         <Route path="/blog/make-automation-platform" element={<BlogPostMake />} />
         <Route path="/blog/shopify-ecommerce-platform" element={<BlogPostShopify />} />
+        <Route path="/blog/moosend-email-marketing" element={<BlogPostMoosend />} />
+        <Route path="/blog/jotform-online-forms" element={<BlogPostJotform />} />
+        <Route path="/blog/apollo-sales-intelligence" element={<BlogPostApollo />} />
       </Routes>
     </Router>
   );

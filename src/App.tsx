@@ -15,6 +15,7 @@ import BlogPostShopify from './pages/BlogPostShopify';
 import BlogPostMoosend from './pages/BlogPostMoosend';
 import BlogPostJotform from './pages/BlogPostJotform';
 import BlogPostApollo from './pages/BlogPostApollo';
+import BlogPostHelium10vsAmzScout from './pages/BlogPostHelium10vsAmzScout';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/blog/moosend-email-marketing" element={<BlogPostMoosend />} />
         <Route path="/blog/jotform-online-forms" element={<BlogPostJotform />} />
         <Route path="/blog/apollo-sales-intelligence" element={<BlogPostApollo />} />
+        <Route path="/blog/helium10-vs-amzscout-comparison" element={<BlogPostHelium10vsAmzScout />} />
       </Routes>
     </Router>
   );

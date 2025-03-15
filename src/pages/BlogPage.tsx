@@ -16,6 +16,16 @@ const BlogPage = () => {
       featured: true
     },
     {
+      id: 'helium10-vs-amzscout-comparison',
+      title: 'Helium 10 vs AMZ Scout: The Ultimate Comparison Guide for Amazon Sellers',
+      excerpt: 'A detailed comparison of two popular Amazon seller tools. Find out which platform best suits your business needs and budget.',
+      date: 'March 10, 2025',
+      author: 'Alex D.',
+      category: 'Amazon Tools',
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: false
+    },
+    {
       id: 'make-automation-platform',
       title: 'Make.com: The Ultimate Automation Platform for E-commerce Businesses in 2025',
       excerpt: 'Learn how Make.com can streamline your e-commerce operations with powerful automation capabilities, connecting all your tools and eliminating manual tasks.',

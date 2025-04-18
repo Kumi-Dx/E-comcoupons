@@ -65,14 +65,22 @@ const BlogPostHelium10vsAmzScout = () => {
                 </p>
 
                 <div className="bg-indigo-900 p-6 rounded-lg my-8">
-                  <h3 className="text-xl font-bold text-white mb-3">Special Helium 10 Offer!</h3>
-                  <p className="text-indigo-200 mb-4">
-                    Get started with Helium 10 using our exclusive discount codes:
-                  </p>
-                  <ul className="text-indigo-200 list-disc list-inside mb-4">
-                    <li>Use code <span className="font-mono bg-indigo-800 px-2 py-1 rounded">PROSPER10</span> for 10% off forever</li>
-                    <li>Use code <span className="font-mono bg-indigo-800 px-2 py-1 rounded">PROSPER20</span> for 20% off first 6 months</li>
-                  </ul>
+                  <h3 className="text-xl font-bold text-white mb-3">Special Offers!</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-indigo-200 font-semibold mb-2">Helium 10 Exclusive Discounts:</p>
+                      <ul className="text-indigo-200 list-disc list-inside">
+                        <li>Use code <span className="font-mono bg-indigo-800 px-2 py-1 rounded">PROSPER10</span> for 10% off forever</li>
+                        <li>Use code <span className="font-mono bg-indigo-800 px-2 py-1 rounded">PROSPER20</span> for 20% off first 6 months</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-indigo-200 font-semibold mb-2">AMZ Scout Special Offer:</p>
+                      <ul className="text-indigo-200 list-disc list-inside">
+                        <li>Use code <span className="font-mono bg-indigo-800 px-2 py-1 rounded">AMZ10</span> for 10% off monthly subscription</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
                 <h2>Quick Overview</h2>
@@ -172,6 +180,8 @@ const BlogPostHelium10vsAmzScout = () => {
                   <li>Platinum: $99/month</li>
                   <li>Diamond: $249/month</li>
                   <li>Elite: Custom pricing</li>
+                  <li>Save 10% forever with code: PROSPER10</li>
+                  <li>Save 20% for 6 months with code: PROSPER20</li>
                 </ul>
 
                 <p>
@@ -181,6 +191,7 @@ const BlogPostHelium10vsAmzScout = () => {
                   <li>Basic: $29/month</li>
                   <li>Pro: $49/month</li>
                   <li>Enterprise: $99/month</li>
+                  <li>Save 10% on monthly subscription with code: AMZ10</li>
                 </ul>
 
                 <h2>Pros and Cons</h2>
@@ -249,39 +260,6 @@ const BlogPostHelium10vsAmzScout = () => {
                   <li>You want a shorter learning curve</li>
                 </ul>
 
-                <h2>Our Recommendation</h2>
-                <p>
-                  While both tools have their merits, Helium 10 emerges as the more comprehensive and powerful option for serious Amazon sellers. Its superior feature set, data accuracy, and advanced capabilities make it the better long-term investment for those committed to growing their Amazon business.
-                </p>
-                <p>
-                  However, if you're just starting out or working with a limited budget, AMZ Scout provides a solid foundation with its essential features and more accessible pricing. You can always upgrade to Helium 10 as your business grows and your needs become more sophisticated.
-                </p>
-
-                <div className="bg-indigo-900 p-6 rounded-lg my-8 text-center">
-                  <h3 className="text-xl font-bold text-white mb-3">Ready to Get Started?</h3>
-                  <p className="text-indigo-200 mb-6">
-                    Try both tools and see which one works better for your business:
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <a 
-                      href="https://bit.ly/47tMwU1" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
-                    >
-                      Try Helium 10 <ExternalLink size={16} className="ml-2" />
-                    </a>
-                    <a 
-                      href="https://amzscout.idevaffiliate.com/idevaffiliate.php?id=2308" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
-                    >
-                      Try AMZ Scout <ExternalLink size={16} className="ml-2" />
-                    </a>
-                  </div>
-                </div>
-
                 <h2>Final Thoughts</h2>
                 <p>
                   The choice between Helium 10 and AMZ Scout ultimately depends on your specific needs, budget, and experience level. Helium 10 offers a more comprehensive solution with advanced features and better data accuracy, making it ideal for serious sellers looking to scale their business. AMZ Scout, while more limited in scope, provides a solid entry point for beginners with its user-friendly interface and lower price point.
@@ -292,7 +270,7 @@ const BlogPostHelium10vsAmzScout = () => {
 
                 {/* Final CTA */}
                 <div className="mt-8 pt-8 border-t border-gray-700">
-                  <h3 className="text-xl font-bold text-gray-100 mb-4">Special Helium 10 Offer</h3>
+                  <h3 className="text-xl font-bold text-gray-100 mb-4">Special Offers</h3>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="https://bit.ly/47tMwU1" 
@@ -303,12 +281,12 @@ const BlogPostHelium10vsAmzScout = () => {
                       Get 10% OFF FOREVER with code: PROSPER10 <ExternalLink size={16} className="ml-2" />
                     </a>
                     <a 
-                      href="https://bit.ly/47tMwU1" 
+                      href="https://amzscout.idevaffiliate.com/idevaffiliate.php?id=2308" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex-1 bg-gray-700 hover:bg-gray-600 text-white text-center py-3 px-6 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
                     >
-                      Get 20% OFF for 6 months with code: PROSPER20 <ExternalLink size={16} className="ml-2" />
+                      Get 10% OFF with code: AMZ10 <ExternalLink size={16} className="ml-2" />
                     </a>
                   </div>
                 </div>

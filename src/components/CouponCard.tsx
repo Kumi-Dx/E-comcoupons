@@ -66,20 +66,24 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
       <div className="p-4">
         <div className="flex items-center justify-between mb-2">
           <h3 className="font-bold text-gray-100">{coupon.store}</h3>
-          <span className={`text-xs px-2 py-1 rounded-full ${
-            daysLeft <= 3 ? 'bg-red-900 text-red-100' : 'bg-green-900 text-green-100'
-          }`}>
-            {daysLeft <= 0 ? 'Expired' : `${daysLeft} days left`}
-          </span>
+          {!isHelium10 && (
+            <span className={`text-xs px-2 py-1 rounded-full ${
+              daysLeft <= 3 ? 'bg-red-900 text-red-100' : 'bg-green-900 text-green-100'
+            }`}>
+              {daysLeft <= 0 ? 'Expired' : `${daysLeft} days left`}
+            </span>
+          )}
         </div>
         
         <p className="text-gray-400 text-sm mb-4">{coupon.description}</p>
         
         {/* Expiry Date */}
-        <div className="flex items-center text-gray-500 text-xs mb-4">
-          <Clock size={14} className="mr-1" />
-          <span>Expires: {new Date(coupon.expiryDate).toLocaleDateString()}</span>
-        </div>
+        {!isHelium10 && (
+          <div className="flex items-center text-gray-500 text-xs mb-4">
+            <Clock size={14} className="mr-1" />
+            <span>Expires: {new Date(coupon.expiryDate).toLocaleDateString()}</span>
+          </div>
+        )}
         
         {/* Coupon Code - Only show if there is a code */}
         {coupon.code && (

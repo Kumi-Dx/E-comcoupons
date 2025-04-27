@@ -45,6 +45,14 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
   // Check if this is an Apollo coupon
   const isApollo = coupon.store === 'Apollo.io';
 
+  // Check if this is a Lovable coupon
+  const isLovable = coupon.store === 'Lovable';
+
+  // Check if this is a Keap coupon
+  const isKeap = coupon.store === 'Keap';
+
+  const isInternalLink = coupon.link.startsWith('/');
+
   return (
     <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 border border-gray-700">
       {/* Store Logo and Discount Badge */}
@@ -103,15 +111,13 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
         {/* Action Buttons */}
         <div className="space-y-2">
           {/* Shop Now Button */}
-          {isMake ? (
-            <a 
-              href="https://www.make.com/en/register?pc=prosper" 
-              target="_blank" 
-              rel="noopener noreferrer"
+          {isInternalLink ? (
+            <Link 
+              to={coupon.link}
               className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
-              Shop Now <ExternalLink size={14} className="ml-1" />
-            </a>
+              Read Review <ExternalLink size={14} className="ml-1" />
+            </Link>
           ) : (
             <a 
               href={coupon.link} 
@@ -177,6 +183,26 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
           {isApollo && (
             <Link 
               to="/blog/apollo-sales-intelligence" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {/* Blog Link for Lovable */}
+          {isLovable && (
+            <Link 
+              to="/blog/vibe-coding-lovable" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              What Is Vibe Coding <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {/* Blog Link for Keap */}
+          {isKeap && (
+            <Link 
+              to="/blog/keap-automation-platform" 
               className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
               Read Our Review <BookOpen size={14} className="ml-1" />

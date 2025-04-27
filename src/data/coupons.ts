@@ -3,6 +3,17 @@ import { Coupon } from '../types';
 export const coupons: Coupon[] = [
   // Website Category
   {
+    id: 'web1',
+    store: 'Lovable',
+    storeImage: 'https://hlhlfaidhsttgfyojoyw.supabase.co/storage/v1/object/sign/Affiliate%20Images/lovable-icon.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJBZmZpbGlhdGUgSW1hZ2VzL2xvdmFibGUtaWNvbi5wbmciLCJpYXQiOjE3NDE2NTg3NjgsImV4cCI6MTc3MzE5NDc2OH0.Hs5nYt5O4jZPZEXMxXQGOZNBXxQXxbKBXxXPPZXGVxE',
+    code: '',
+    discount: 'SPECIAL PARTNER PRICING',
+    description: 'Get started with Lovable and receive special partner pricing',
+    expiryDate: '2025-12-31',
+    category: 'website',
+    link: 'https://lovable.dev/?via=Prosper'
+  },
+  {
     id: 'web2',
     store: 'Shopify',
     storeImage: 'https://logo.clearbit.com/shopify.com',
@@ -16,7 +27,7 @@ export const coupons: Coupon[] = [
   {
     id: 'web3',
     store: 'Jotform',
-    storeImage: '/jotform-logo.png',
+    storeImage: 'https://hlhlfaidhsttgfyojoyw.supabase.co/storage/v1/object/sign/Affiliate%20Images/jotform-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJBZmZpbGlhdGUgSW1hZ2VzL2pvdGZvcm0tbG9nby5wbmciLCJpYXQiOjE3NDE2NTg3NjgsImV4cCI6MTc3MzE5NDc2OH0.Hs5nYt5O4jZPZEXMxXQGOZNBXxQXxbKBXxXPPZXGVxE',
     code: '',
     discount: '50% OFF FIRST YEAR',
     description: 'Get 50% off any paid plan for the first year',
@@ -73,6 +84,17 @@ export const coupons: Coupon[] = [
     expiryDate: '2025-10-31',
     category: 'automation',
     link: 'https://www.make.com/en/register?pc=prosper'
+  },
+  {
+    id: 'auto4',
+    store: 'Keap',
+    storeImage: 'https://logo.clearbit.com/keap.com',
+    code: '',
+    discount: 'FREE TRIAL + 50% OFF',
+    description: 'Get started with a free trial and save 50% on your first 3 months',
+    expiryDate: '2025-12-31',
+    category: 'automation',
+    link: 'https://get.keap.com/akcjyax2jwm7'
   },
 
   // Apollo.io (both Email Marketing and Automation categories)

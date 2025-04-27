@@ -6,6 +6,16 @@ import Footer from '../components/Footer';
 const BlogPage = () => {
   const blogPosts = [
     {
+      id: 'vibe-coding-lovable',
+      title: 'Vibe Coding: Empowering the Average Person to Build the Web of Tomorrow',
+      excerpt: 'Discover how vibe coding is transforming web development and why tools like Lovable are leading this revolutionary approach to creating websites.',
+      date: 'April 24, 2024',
+      author: 'Alex D.',
+      category: 'Web Development',
+      image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: true
+    },
+    {
       id: 'helium10-amazon-seller-tool',
       title: 'Helium 10: The Ultimate Amazon Seller Tool Suite in 2025',
       excerpt: 'Discover how Helium 10 can transform your Amazon business with powerful tools for product research, keyword optimization, listing management, and more.',
@@ -13,7 +23,7 @@ const BlogPage = () => {
       author: 'Alex D.',
       category: 'Amazon Tools',
       image: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      featured: true
+      featured: false
     },
     {
       id: 'helium10-vs-amzscout-comparison',
@@ -73,6 +83,16 @@ const BlogPage = () => {
       author: 'Alex D.',
       category: 'Sales Intelligence',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: false
+    },
+    {
+      id: 'keap-automation-platform',
+      title: 'Keap: The All-in-One Sales & Marketing Automation Platform for Small Businesses',
+      excerpt: 'Discover how Keap combines CRM, marketing automation, and e-commerce tools to help small businesses grow and thrive in 2025.',
+      date: 'March 11, 2025',
+      author: 'Brad V.',
+      category: 'Automation',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
       featured: false
     }
   ];

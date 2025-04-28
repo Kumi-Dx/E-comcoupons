@@ -170,6 +170,7 @@ function HomePage() {
             )}
           </div>
           <nav className="hidden md:flex space-x-4">
+            <Link to="/blog" className="text-gray-300 hover:text-indigo-400 font-medium">Blog</Link>
             <Link to="/popular-deals" className="text-gray-300 hover:text-indigo-400 font-medium">Popular Deals</Link>
             <Link to="/new-coupons" className="text-gray-300 hover:text-indigo-400 font-medium">New Coupons</Link>
           </nav>

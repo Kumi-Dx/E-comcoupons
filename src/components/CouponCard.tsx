@@ -195,7 +195,7 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
               to="/blog/vibe-coding-lovable" 
               className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
-              What Is Vibe Coding <BookOpen size={14} className="ml-1" />
+              What is Vibe Coding? <BookOpen size={14} className="ml-1" />
             </Link>
           )}
 

@@ -6,14 +6,24 @@ import Footer from '../components/Footer';
 const BlogPage = () => {
   const blogPosts = [
     {
+      id: 'adcreative-ai-design',
+      title: 'AdCreative.ai: Revolutionizing Ad Design with Artificial Intelligence',
+      excerpt: 'Discover how AdCreative.ai is transforming digital advertising with AI-powered design tools that help businesses create high-converting ad creatives quickly and efficiently.',
+      date: 'April 28, 2025',
+      author: 'Alex D.',
+      category: 'AI Tools',
+      image: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: true
+    },
+    {
       id: 'vibe-coding-business-owners',
-      title: 'Vibe Coding for Business Owners: Why You Don\'t Need to Be a Developer to Build a Website',
+      title: "Vibe Coding for Business Owners: Why You Don't Need to Be a Developer to Build a Website",
       excerpt: 'Discover how vibe coding is making website development accessible to business owners, allowing you to create professional websites without coding experience.',
       date: 'April 27, 2025',
       author: 'Alex D.',
       category: 'Web Development',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      featured: true
+      featured: false
     },
     {
       id: 'vibe-coding-lovable',

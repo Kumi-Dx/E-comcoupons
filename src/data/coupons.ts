@@ -35,6 +35,17 @@ export const coupons: Coupon[] = [
     category: 'website',
     link: 'https://link.jotform.com/e-comcoupons-Q9C9swMGio'
   },
+  {
+    id: 'web4',
+    store: 'AdCreative.ai',
+    storeImage: 'https://logo.clearbit.com/adcreative.ai',
+    code: '',
+    discount: 'FREE TRIAL',
+    description: 'Start your free trial with AdCreative.ai and create AI-powered ad creatives',
+    expiryDate: '2025-12-31',
+    category: 'website',
+    link: 'https://free-trial.adcreative.ai/vhdimlho9ock'
+  },
 
   // Online Marketplaces Category
   {

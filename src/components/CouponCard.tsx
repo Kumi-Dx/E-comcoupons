@@ -51,6 +51,9 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
   // Check if this is a Keap coupon
   const isKeap = coupon.store === 'Keap';
 
+  // Check if this is an AdCreative.ai coupon
+  const isAdCreative = coupon.store === 'AdCreative.ai';
+
   const isInternalLink = coupon.link.startsWith('/');
 
   return (
@@ -203,6 +206,16 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
           {isKeap && (
             <Link 
               to="/blog/keap-automation-platform" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {/* Blog Link for AdCreative.ai */}
+          {isAdCreative && (
+            <Link 
+              to="/blog/adcreative-ai-design" 
               className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
               Read Our Review <BookOpen size={14} className="ml-1" />

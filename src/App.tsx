@@ -19,6 +19,7 @@ import BlogPostHelium10vsAmzScout from './pages/BlogPostHelium10vsAmzScout';
 import BlogPostKeap from './pages/BlogPostKeap';
 import BlogPostVibeCoding from './pages/BlogPostVibeCoding';
 import BlogPostVibeCodingBusiness from './pages/BlogPostVibeCodingBusiness';
+import BlogPostAdCreative from './pages/BlogPostAdCreative';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/blog/keap-automation-platform" element={<BlogPostKeap />} />
         <Route path="/blog/vibe-coding-lovable" element={<BlogPostVibeCoding />} />
         <Route path="/blog/vibe-coding-business-owners" element={<BlogPostVibeCodingBusiness />} />
+        <Route path="/blog/adcreative-ai-design" element={<BlogPostAdCreative />} />
       </Routes>
     </Router>
   );

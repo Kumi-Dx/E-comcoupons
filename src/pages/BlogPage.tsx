@@ -6,6 +6,16 @@ import Footer from '../components/Footer';
 const BlogPage = () => {
   const blogPosts = [
     {
+      id: '8fig-ecommerce-funding',
+      title: '8fig: Revolutionizing E-commerce Growth with Flexible Funding Solutions',
+      excerpt: 'Discover how 8fig is transforming e-commerce funding with flexible solutions designed specifically for online sellers. Learn about their innovative approach to growth financing.',
+      date: 'May 1, 2025',
+      author: 'Brad V.',
+      category: 'E-commerce Finance',
+      image: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: true
+    },
+    {
       id: 'adcreative-ai-design',
       title: 'AdCreative.ai: Revolutionizing Ad Design with Artificial Intelligence',
       excerpt: 'Discover how AdCreative.ai is transforming digital advertising with AI-powered design tools that help businesses create high-converting ad creatives quickly and efficiently.',
@@ -13,7 +23,7 @@ const BlogPage = () => {
       author: 'Alex D.',
       category: 'AI Tools',
       image: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      featured: true
+      featured: false
     },
     {
       id: 'vibe-coding-business-owners',

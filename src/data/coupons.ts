@@ -130,5 +130,18 @@ export const coupons: Coupon[] = [
     expiryDate: '2025-12-31',
     category: 'automation',
     link: 'https://get.apollo.io/grbvftwtz4oo'
+  },
+
+  // 8fig Coupon
+  {
+    id: 'finance1',
+    store: '8fig',
+    storeImage: 'https://logo.clearbit.com/8fig.co',
+    code: '',
+    discount: 'SPECIAL PARTNER OFFER',
+    description: 'Get flexible funding for your e-commerce business with special partner terms',
+    expiryDate: '2025-12-31',
+    category: 'automation',
+    link: 'https://grow.8fig.co/os5cupg507nz'
   }
 ];

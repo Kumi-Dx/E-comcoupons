@@ -54,7 +54,8 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
   // Check if this is an AdCreative.ai coupon
   const isAdCreative = coupon.store === 'AdCreative.ai';
 
-  const isInternalLink = coupon.link.startsWith('/');
+  // Check if this is an 8fig coupon
+  const is8fig = coupon.store === '8fig';
 
   return (
     <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 border border-gray-700">
@@ -114,25 +115,16 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
         {/* Action Buttons */}
         <div className="space-y-2">
           {/* Shop Now Button */}
-          {isInternalLink ? (
-            <Link 
-              to={coupon.link}
-              className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
-            >
-              Read Review <ExternalLink size={14} className="ml-1" />
-            </Link>
-          ) : (
-            <a 
-              href={coupon.link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
-            >
-              Shop Now <ExternalLink size={14} className="ml-1" />
-            </a>
-          )}
+          <a 
+            href={coupon.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+          >
+            Shop Now <ExternalLink size={14} className="ml-1" />
+          </a>
           
-          {/* Blog Link for Helium 10 */}
+          {/* Blog Links */}
           {isHelium10 && (
             <Link 
               to="/blog/helium10-amazon-seller-tool" 
@@ -142,7 +134,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
           
-          {/* Blog Link for Make */}
           {isMake && (
             <Link 
               to="/blog/make-automation-platform" 
@@ -152,7 +143,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
           
-          {/* Blog Link for Shopify */}
           {isShopify && (
             <Link 
               to="/blog/shopify-ecommerce-platform" 
@@ -162,7 +152,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
 
-          {/* Blog Link for Moosend */}
           {isMoosend && (
             <Link 
               to="/blog/moosend-email-marketing" 
@@ -172,7 +161,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
 
-          {/* Blog Link for Jotform */}
           {isJotform && (
             <Link 
               to="/blog/jotform-online-forms" 
@@ -182,7 +170,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
 
-          {/* Blog Link for Apollo */}
           {isApollo && (
             <Link 
               to="/blog/apollo-sales-intelligence" 
@@ -192,7 +179,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
 
-          {/* Blog Link for Lovable */}
           {isLovable && (
             <Link 
               to="/blog/vibe-coding-lovable" 
@@ -202,7 +188,6 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
 
-          {/* Blog Link for Keap */}
           {isKeap && (
             <Link 
               to="/blog/keap-automation-platform" 
@@ -212,10 +197,18 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
             </Link>
           )}
 
-          {/* Blog Link for AdCreative.ai */}
           {isAdCreative && (
             <Link 
               to="/blog/adcreative-ai-design" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {is8fig && (
+            <Link 
+              to="/blog/8fig-ecommerce-funding" 
               className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
               Read Our Review <BookOpen size={14} className="ml-1" />

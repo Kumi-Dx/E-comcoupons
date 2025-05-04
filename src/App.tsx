@@ -20,6 +20,7 @@ import BlogPostKeap from './pages/BlogPostKeap';
 import BlogPostVibeCoding from './pages/BlogPostVibeCoding';
 import BlogPostVibeCodingBusiness from './pages/BlogPostVibeCodingBusiness';
 import BlogPostAdCreative from './pages/BlogPostAdCreative';
+import BlogPostEightFig from './pages/BlogPostEightFig';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/blog/vibe-coding-lovable" element={<BlogPostVibeCoding />} />
         <Route path="/blog/vibe-coding-business-owners" element={<BlogPostVibeCodingBusiness />} />
         <Route path="/blog/adcreative-ai-design" element={<BlogPostAdCreative />} />
+        <Route path="/blog/8fig-ecommerce-funding" element={<BlogPostEightFig />} />
       </Routes>
     </Router>
   );

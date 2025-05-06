@@ -46,6 +46,17 @@ export const coupons: Coupon[] = [
     category: 'website',
     link: 'https://free-trial.adcreative.ai/vhdimlho9ock'
   },
+  {
+    id: 'web5',
+    store: 'AirOps',
+    storeImage: 'https://logo.clearbit.com/airops.com',
+    code: '',
+    discount: 'SPECIAL PARTNER OFFER',
+    description: 'Get started with AirOps and transform your data operations with AI',
+    expiryDate: '2025-12-31',
+    category: 'website',
+    link: 'https://www.airops.com/?via=Prosper'
+  },
 
   // Online Marketplaces Category
   {

@@ -6,6 +6,26 @@ import Footer from '../components/Footer';
 const BlogPage = () => {
   const blogPosts = [
     {
+      id: 'airops-ai-data-operations',
+      title: 'How AirOps Helps Teams Do More with Less—Faster',
+      excerpt: 'Discover how AirOps is transforming data operations with its innovative AI-powered platform, making data analysis and automation accessible to everyone.',
+      date: 'May 4, 2025',
+      author: 'Brad V.',
+      category: 'AI Tools',
+      image: 'https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: true
+    },
+    {
+      id: 'spocket-dropshipping-platform',
+      title: 'The Spocket Program: Your Shortcut to Streamlined Success',
+      excerpt: 'Discover how Spocket is revolutionizing dropshipping with its curated marketplace of US and EU suppliers, offering faster shipping times and higher quality products for e-commerce entrepreneurs.',
+      date: 'May 3, 2025',
+      author: 'Brad V.',
+      category: 'E-commerce Solutions',
+      image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: false
+    },
+    {
       id: '8fig-ecommerce-funding',
       title: '8fig: Revolutionizing E-commerce Growth with Flexible Funding Solutions',
       excerpt: 'Discover how 8fig is transforming e-commerce funding with flexible solutions designed specifically for online sellers. Learn about their innovative approach to growth financing.',
@@ -13,7 +33,7 @@ const BlogPage = () => {
       author: 'Brad V.',
       category: 'E-commerce Finance',
       image: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      featured: true
+      featured: false
     },
     {
       id: 'adcreative-ai-design',

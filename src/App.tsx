@@ -21,6 +21,8 @@ import BlogPostVibeCoding from './pages/BlogPostVibeCoding';
 import BlogPostVibeCodingBusiness from './pages/BlogPostVibeCodingBusiness';
 import BlogPostAdCreative from './pages/BlogPostAdCreative';
 import BlogPostEightFig from './pages/BlogPostEightFig';
+import BlogPostSpocket from './pages/BlogPostSpocket';
+import BlogPostAirOps from './pages/BlogPostAirOps';
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
         <Route path="/blog/vibe-coding-business-owners" element={<BlogPostVibeCodingBusiness />} />
         <Route path="/blog/adcreative-ai-design" element={<BlogPostAdCreative />} />
         <Route path="/blog/8fig-ecommerce-funding" element={<BlogPostEightFig />} />
+        <Route path="/blog/spocket-dropshipping-platform" element={<BlogPostSpocket />} />
+        <Route path="/blog/airops-ai-data-operations" element={<BlogPostAirOps />} />
       </Routes>
     </Router>
   );

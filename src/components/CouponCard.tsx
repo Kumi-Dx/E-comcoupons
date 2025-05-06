@@ -57,6 +57,9 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
   // Check if this is an 8fig coupon
   const is8fig = coupon.store === '8fig';
 
+  // Check if this is an AirOps coupon
+  const isAirOps = coupon.store === 'AirOps';
+
   return (
     <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 border border-gray-700">
       {/* Store Logo and Discount Badge */}
@@ -209,6 +212,15 @@ const CouponCard: React.FC<CouponCardProps> = ({ coupon }) => {
           {is8fig && (
             <Link 
               to="/blog/8fig-ecommerce-funding" 
+              className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
+            >
+              Read Our Review <BookOpen size={14} className="ml-1" />
+            </Link>
+          )}
+
+          {isAirOps && (
+            <Link 
+              to="/blog/airops-ai-data-operations" 
               className="block w-full bg-indigo-800 hover:bg-indigo-700 text-gray-200 text-center py-2 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
               Read Our Review <BookOpen size={14} className="ml-1" />

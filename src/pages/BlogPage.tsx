@@ -6,6 +6,16 @@ import Footer from '../components/Footer';
 const BlogPage = () => {
   const blogPosts = [
     {
+      id: 'glide-no-code-platform',
+      title: 'No Code, No Problem: How Glide Empowers Anyone to Build Apps',
+      excerpt: 'Discover how Glide is revolutionizing app development by enabling anyone to create powerful, professional applications without writing code.',
+      date: 'May 8, 2025',
+      author: 'Alex D.',
+      category: 'No-Code Development',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      featured: true
+    },
+    {
       id: 'airops-ai-data-operations',
       title: 'How AirOps Helps Teams Do More with Less—Faster',
       excerpt: 'Discover how AirOps is transforming data operations with its innovative AI-powered platform, making data analysis and automation accessible to everyone.',
@@ -13,7 +23,7 @@ const BlogPage = () => {
       author: 'Brad V.',
       category: 'AI Tools',
       image: 'https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      featured: true
+      featured: false
     },
     {
       id: 'spocket-dropshipping-platform',

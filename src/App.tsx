@@ -23,6 +23,7 @@ import BlogPostAdCreative from './pages/BlogPostAdCreative';
 import BlogPostEightFig from './pages/BlogPostEightFig';
 import BlogPostSpocket from './pages/BlogPostSpocket';
 import BlogPostAirOps from './pages/BlogPostAirOps';
+import BlogPostGlide from './pages/BlogPostGlide';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path="/blog/8fig-ecommerce-funding" element={<BlogPostEightFig />} />
         <Route path="/blog/spocket-dropshipping-platform" element={<BlogPostSpocket />} />
         <Route path="/blog/airops-ai-data-operations" element={<BlogPostAirOps />} />
+        <Route path="/blog/glide-no-code-platform" element={<BlogPostGlide />} />
       </Routes>
     </Router>
   );

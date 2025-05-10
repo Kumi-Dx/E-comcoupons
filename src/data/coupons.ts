@@ -57,6 +57,17 @@ export const coupons: Coupon[] = [
     category: 'website',
     link: 'https://www.airops.com/?via=Prosper'
   },
+  {
+    id: 'web6',
+    store: 'Glide',
+    storeImage: 'https://logo.clearbit.com/glideapps.com',
+    code: '',
+    discount: 'SPECIAL PARTNER OFFER',
+    description: 'Build powerful apps without code using Glide',
+    expiryDate: '2025-12-31',
+    category: 'website',
+    link: 'https://join.glideapps.com/ubs12jpfe33m'
+  },
 
   // Online Marketplaces Category
   {
@@ -80,6 +91,17 @@ export const coupons: Coupon[] = [
     expiryDate: '2025-12-31',
     category: 'marketplace',
     link: 'https://bit.ly/47tMwU1'
+  },
+  {
+    id: 'market3',
+    store: 'Spocket',
+    storeImage: 'https://logo.clearbit.com/spocket.co',
+    code: '',
+    discount: 'SPECIAL PARTNER OFFER',
+    description: 'Get started with Spocket and streamline your dropshipping business',
+    expiryDate: '2025-12-31',
+    category: 'marketplace',
+    link: 'https://get.spocket.co/z6m4265phc8u'
   },
 
   // Email Marketing Category

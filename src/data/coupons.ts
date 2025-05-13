@@ -103,6 +103,17 @@ export const coupons: Coupon[] = [
     category: 'marketplace',
     link: 'https://get.spocket.co/z6m4265phc8u'
   },
+  {
+    id: 'market4',
+    store: 'AMZ Scout',
+    storeImage: 'https://logo.clearbit.com/amzscout.net',
+    code: 'AMZ10',
+    discount: '10% OFF MONTHLY',
+    description: 'Get 10% off on monthly subscription',
+    expiryDate: '2025-12-31',
+    category: 'marketplace',
+    link: 'https://amzscout.idevaffiliate.com/idevaffiliate.php?id=2308'
+  },
 
   // Email Marketing Category
   {
